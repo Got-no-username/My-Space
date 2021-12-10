@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Kanit&family=Playfair+Display&family=Poppins:wght@600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    padding: 28px 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 40px;
+    width: 250px;
+    opacity: 0.99;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    cursor: pointer;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
